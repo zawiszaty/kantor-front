@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <h1 class="main__header">Kalkulator walut</h1>
+    <form class="main__form">
+        <label for="currency__amount">Ilość waluty</label>
+        <input type="number" class="main__form__input" id="currency__amount" step="0.01" value="1.00">
+        <label for="currency">Wybierz jaka walute chcesz wymienić</label>
+        <select name="currency" id="currency" class="main__form__input">
+            <option value="EUR">EUR/PLN</option>
+            <option value="USD">USD/PLN</option>
+            <option value="GBP">GBP/PLN</option>
+        </select>
+        <label for="date">Po kursie z jakiego dnia chcesz wymienić ?</label>
+        <select name="date" id="date" class="main__form__input">
+            <option value="1">2018.03.26</option>
+            <option value="2">2018.03.27</option>
+        </select>
+        <button type="submit" class="main__form__button">Wyślij formularz</button>
+    </form>
+</main>
+<div class="modal modal--disabled">
+
+    <button class="modal__button">Zamknij</button>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

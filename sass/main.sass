@@ -1,0 +1,88 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  background-color: #fafafa
+main
+  background-color: #ffffff
+  min-width: 40%
+  min-height: 40%
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1)
+.main__header
+  display: block
+  width: 100%
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1)
+  padding: 0.4em
+  text-align: center
+.main__form
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 1em
+.main__form__input
+  display: block
+  width: 50%
+  margin: 0.8em 0
+.main__form__button
+  display: block
+  background-color: #ffffff
+  outline: 0
+  border: 0
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5)
+  text-align: center
+  transition: all 0.3s
+  width: 200px
+  height: 50px
+  margin: 0.8em 0
+  &:hover
+    box-shadow: 0 4px 11px 0px rgba(0,0,0,0.375)
+.modal
+  background-color: #ffffff
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  transition: all 0.5s
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1)
+.modal--disabled
+  display: none
+.modal--active
+  display: block
+.modal__header
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1)
+  width: 100%
+  padding: 0.3em
+  font-size: 1.5rem
+.modal__button
+  position: absolute
+  bottom: 20px
+  left: 20px
+  display: block
+  background-color: #ffffff
+  outline: 0
+  border: 0
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1)
+  text-align: center
+  transition: all 0.3s
+  width: 200px
+  height: 50px
+  &:hover
+    box-shadow: 0 4px 11px 0px rgba(0,0,0,0.375)
+.modal__conversion
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 2rem
+  text-align: center
+
