@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
     };
 
     axios.post('http://localhost:8080/api/conversion', data)
-        .then(response => {
+        .then((response) => {
 
             h2.innerHTML = `Wymienione zostało: ${data['amount']} ${data['currency']}`;
             section.innerHTML = `Na: ${response.data} PLN`;
@@ -34,6 +34,18 @@ form.addEventListener('submit', (e) => {
             modal.classList.add('modal--active');
 
             console.log(response.data);
+
+            modal__button.addEventListener('click', () => {
+                modal.classList.remove('modal--active');
+                modal.classList.add('modal--disabled');
+            });
+        })
+        .catch((error) => {
+            h2.innerHTML = `Error 500`;
+            section.innerHTML = `Nastąpił nieoczekiwany błąd przepraszamy`;
+
+            modal.classList.remove('modal--disabled');
+            modal.classList.add('modal--active');
 
             modal__button.addEventListener('click', () => {
                 modal.classList.remove('modal--active');
