@@ -1,7 +1,6 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
 let browserSync = require('browser-sync').create();
-const babel = require('gulp-babel');
 
 gulp.task('sass', function () {
     return gulp.src('./sass/**/*.sass')
